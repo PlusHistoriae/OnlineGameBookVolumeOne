@@ -17,7 +17,7 @@ print("Wow. That is the most obscure hobby in existence.")
 if FavoriteHobby == "Trying to shut you up" or "Trying to shut you up." or "Shutting you up" or "Shutting you up."or "Making you shut up" or "Making you shut up." or "Trying to make you shut up." or "Trying to make you shut up":
   print ('Also, sorry to say it, ' + Usern + ', but that sounds kind of hopeless.')
 print("But Anyways, I'm just a humble game dealer, and you must figure out your strengths and weaknesses.")
-print("You have 15 points. Divide them between Strength, Dexterity, Intelligence, and being an imbecile. Also don't put any more than 14 in a stat.")
+print("You have 15 points. Divide them between Strength, Dexterity, Intelligence, and being an imbecile.")
 for tries in range(4999959999999998999997529):
   print("How many points would you like to put into Strength?")
   print() 
