@@ -26,14 +26,30 @@ for tries in range(4999959999999998999997529):
     print()
     print("Wow. You're strong. Also a braindead imbecile. And horrible at jumping. You have expended all your points, and thus you will not have an opportunity to put points into Dexterity or Intelligence.")
     break
-  if Strength > 15:
+  elif Strength > 15:
     print()
     print("You were so tough that you generated your own gravitaional field,  floated off into space, and suffocated. Retry.")
-  if Strength < 0:
+  elif Strength < 0:
     print()
     print("You were so skinny that you turned into a stick and died. Retry.")
   elif Strength < 15:
     print()
     print("You are so weak. I can't believe you. NERD!")
-    
-  
+    print("What Dexterity do you want?")
+    print()
+    Dexterity = int(input())
+    if Dexterity+Strength > 15:
+      print()
+      print("Your dexterity and strength combined exceed te power of the demi-gods. The Gods are angry, so they kill you. Retry.")
+    elif Dexterity == 15:
+      print()
+      print("Wow. You are quite dexterous. But unfortunately you are as strong as a twig,and less intelligent than an ant. Hence you cannot do your Intelligence Stat.")
+      break
+    elif Dexterity > 15:
+      print()
+      print("Your joints move so fast that you manage to jump into space, before you falling to your eventual death due to suffocation. At least you can do 40 backflips per second while you die!")
+    elif Dexterity < 0:
+      print()
+      print("You are so un-dexterous that your joints stop working. As a statue, you wach as all your loved ones die. Retry.")
+    elif Dexterity < 15:
+      print("You UNDEXTEROUS NERD!")
