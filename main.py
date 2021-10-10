@@ -18,38 +18,42 @@ if FavoriteHobby == "Trying to shut you up" or "Trying to shut you up." or "Shut
   print ('Also, sorry to say it, ' + Usern + ', but that sounds kind of hopeless.')
 print("But Anyways, I'm just a humble game dealer, and you must figure out your strengths and weaknesses.")
 print("You have 15 points. Divide them between Strength, Dexterity, Intelligence, and being an imbecile.")
+points = 15
 for tries in range(4999959999999998999997529):
   print("How many points would you like to put into Strength?")
   print() 
   Strength = int(input())
   if Strength == 15:
     print()
-    print("Wow. You're strong. Also a braindead imbecile. And horrible at jumping. You have expended all your points, and thus you will not have an opportunity to put points into Dexterity or Intelligence.")
-    break
-  elif Strength > 15:
+    print("Wow. You're strong. Also a braindead imbecile. And horrible at jumping. You have expended all your points, and thus you will not have an opportunity to put points into Dexterity or Intelligence. You cant even put points into being an imbecile. Quite an inconvenience not being able to do that.")
+  elif Strength > points:
     print()
     print("You were so tough that you generated your own gravitaional field,  floated off into space, and suffocated. Retry.")
   elif Strength < 0:
     print()
     print("You were so skinny that you turned into a stick and died. Retry.")
-  elif Strength < 15:
+  elif Strength < points:
     print()
     print("You are so weak. I can't believe you. NERD!")
     print("What Dexterity do you want?")
     print()
     Dexterity = int(input())
-    if Dexterity+Strength > 15:
+    if Dexterity+Strength > points:
       print()
       print("Your dexterity and strength combined exceed te power of the demi-gods. The Gods are angry, so they kill you. Retry.")
-    elif Dexterity == 15:
+    elif Dexterity+Strength == points:
+      print()
+      print("Your points have been used up, with " + Dexterity + "for your Dexterity, and " + Strength + "for your Strength.")
+    elif Dexterity == points:
       print()
       print("Wow. You are quite dexterous. But unfortunately you are as strong as a twig,and less intelligent than an ant. Hence you cannot do your Intelligence Stat.")
       break
-    elif Dexterity > 15:
+    elif Dexterity > points:
       print()
       print("Your joints move so fast that you manage to jump into space, before you falling to your eventual death due to suffocation. At least you can do 40 backflips per second while you die!")
     elif Dexterity < 0:
       print()
       print("You are so un-dexterous that your joints stop working. As a statue, you wach as all your loved ones die. Retry.")
-    elif Dexterity < 15:
+    elif Dexterity < points:
       print("You UNDEXTEROUS NERD!")
+      print("What will you put into ")
